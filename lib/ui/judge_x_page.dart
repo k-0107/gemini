@@ -17,7 +17,7 @@ class JudgeXPage extends HookWidget {
             children: [
               const SizedBox(
                 child: Padding(
-                  padding: EdgeInsets.all(16.0),
+                  padding: EdgeInsets.fromLTRB(0, 50, 0, 30),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -26,7 +26,10 @@ class JudgeXPage extends HookWidget {
                         height: 30,
                         child: FlutterLogo(),
                       ),
-                      Text('文章から人物像を判定します')
+                      Text(
+                        'ヘルプデスク',
+                        style: TextStyle(fontSize: 15),
+                      )
                     ],
                   ),
                 ),
@@ -47,7 +50,10 @@ class JudgeXPage extends HookWidget {
               SizedBox(
                 child: Expanded(
                   child: Container(
-                    color: Colors.lightBlue[50],
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25),
+                      color: const Color.fromARGB(255, 228, 246, 241),
+                    ),
                     alignment: Alignment.center,
                     child: const PersonChar(),
                   ),

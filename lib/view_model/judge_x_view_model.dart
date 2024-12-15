@@ -17,7 +17,7 @@ class PostInputField extends StatelessWidget {
       keyboardType: TextInputType.multiline,
       maxLines: 4,
       decoration: const InputDecoration(
-        labelText: '言葉を入力してね',
+        labelText: '分からないことを聞いてください',
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(width: 2, color: Colors.blue),
         ),
@@ -43,7 +43,7 @@ class JudgeButton extends ConsumerWidget {
         await notifire.judge(controller.text);
       },
       child: Text(
-        '判定',
+        '送信',
         style: GoogleFonts.kaiseiDecol(
             fontWeight: FontWeight.bold, color: Colors.black),
       ),
